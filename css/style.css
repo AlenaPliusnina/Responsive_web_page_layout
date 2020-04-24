@@ -161,7 +161,7 @@ h1 {
 }
 
 .provide-info {
-	width: 539px;
+	max-width: 539px;
     margin-right: 102px;
     margin-left: 32px;
 
@@ -214,8 +214,8 @@ h1 {
 .services {
 	display: flex;
 	flex-wrap: wrap;
-	width: 643px;
-	padding-top: 12px; 
+	max-width: 643px;
+	padding-top: 8px; 
 }
 
 .services h3 {
@@ -231,10 +231,10 @@ h1 {
 
 .managment {
 	flex: 1 1 301.33px;
-	width: 301.33px;
+	max-width: 301.33px;
 	max-height: 209px;
 	margin-bottom: 53px;
-	margin-right: 14px; 
+	margin-right: 20px; 
 }
 
 .managment h3 {
@@ -248,7 +248,7 @@ h1 {
 
 .design {
 	flex: 1 1 320.51px;
-	width: 320.51px;
+	max-width: 320.51px;
 	max-height: 206.84px;
 	margin-bottom: 54px;
 }
@@ -264,9 +264,9 @@ h1 {
 
 .brand {
 	flex: 1 1 303.01px;
-	width: 303.01px;
+	max-width: 303.01px;
 	max-height: 208.97px;
-	margin-right: 12px; 
+	margin-right: 20px; 
 }
 
 .brand h3 {
@@ -280,7 +280,7 @@ h1 {
 
 .animation {
 	flex: 1 1 321px;
-	width: 321px;
+	max-width: 319px;
 	max-height: 210px;
 }
 
@@ -556,7 +556,7 @@ h1 {
 .section-5 {
 	padding-top: 125px;
 	padding-bottom: 140px;
-	margin-bottom: 120px;
+	margin-bottom: 94px;
 	margin-top: 107px;
 	background-color: #2C2C2C;
 }
@@ -632,13 +632,21 @@ h1 {
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 107px;
+	padding-left: 120px;
 	max-width: 1418px;
+}
+
+.get-in-touch {
+	max-width: 760px;
+	display: flex;
+	justify-content: start;
+	flex-wrap: wrap;
 }
 
 .section-6 h2 {
 	max-width: 328px;
-	margin-bottom: 56px;
-	margin-left: 72px;
+	margin-bottom: 38px;
+	margin-left: 25px;
 	font-family: 'OpenSans-Bold', Helvetica, Arial, sans-serif;
 	font-style: normal;
 	font-weight: bold;
@@ -651,14 +659,14 @@ h1 {
 
 .paragraph-2 {
 	max-width: 752.85px;
-	margin-bottom: 55px;
-	margin-left: 72px;
+	margin-bottom: 44px;
+	margin-left: 25px;
 }
 
 .section-6 hr {
 	width: 134px;
 	height: 5px;
-	margin-left: 72px;
+	margin-left: 25px;
 	margin-bottom: 73px;
 	background: #FF2D2D; 
 	border: none;
@@ -668,7 +676,7 @@ h1 {
 	display: flex;
 	justify-content: space-between;
 	max-width: 1418px;
-	margin-left: 72px;
+	margin-left: 25px;
 }
 
 .left-part {
@@ -734,19 +742,32 @@ h1 {
 }
 
 .right-part {
-	padding-right: 184px;
-	padding-left: 81px;
-	padding-top: 141PX;
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	width: 580px;
 	background-color: #2D2D2D;
 }
 
-.right-part p {
+.right-part-content {
+	padding-top: 25px;
+    margin-right: 83px;
+    margin-left: 82px;
+
+}
+
+.right-part-content p {
     margin-top: 0px;
-    margin-bottom: 20px;
+	margin-bottom: 20px;
+	max-width: 300px;
 	color: white;
 }
 
-.right-part p:nth-child(1) {
+.right-part-content p:nth-child(2) {
+    margin-bottom: 25px;
+}
+
+.right-part-content p:nth-child(1) {
 	font-family: 'OpenSans-Bold', Helvetica, Arial, sans-serif;
 	font-style: normal;
 	font-weight: bold;
@@ -802,6 +823,18 @@ footer {
 
 /*Responsive*/
 
+@media screen and (max-width: 1315px) {
+	
+	.managment, .design, .brand, .animation {
+		max-width: 643px;
+	}
+
+	.brand {
+		margin-bottom: 40px;
+	}
+
+}
+
 @media screen and (max-width: 1249px) {
 
 	.intro > h1, .paragraph-intro, .intro > a {
@@ -844,10 +877,6 @@ footer {
 	.members {
 		display: flex;
 		flex-wrap: wrap;
-	}
-
-	.members p {
-		flex: 1 1 662px;
 	}
 
 	.members li > a {
@@ -902,6 +931,7 @@ footer {
 		padding-right: 0;
 		padding-top: 50px;
 		padding-bottom: 50px;
+		justify-content: center;
 	}
 
 	.right-part p {
@@ -933,6 +963,10 @@ footer {
 	
 	.section-1 {
 		flex-wrap: wrap;
+	}
+
+	.managment, .design, .brand, .animation {
+		max-width: 302px;
 	}
 	
 	.section-2 {
@@ -1051,7 +1085,12 @@ footer {
 	}
 }
 
-@media screen and (max-width: 690px) {
+@media screen and (max-width: 692px) {
+	
+	.managment, .design, .brand, .animation {
+		max-width: 90vw;
+	}
+
 	.section-4 {
 		max-width: 435px;
 	}
@@ -1123,6 +1162,8 @@ footer {
 	.section-3 h2 {
 		line-height: 40px;
 		max-width: 220px;
+		padding-left: 0;
+		word-break: break-word;
 	}
 
 	.section-4 {
@@ -1134,13 +1175,25 @@ footer {
 	}
 
 	.section-4 h2 {
+		margin-left: 10;
+		margin-right: 10;
 		line-height: 45px;
+		text-align: center;
+		max-width: 200px;
 	}
+
 	.section-4 hr {
 		margin-top: 30px;
 	}
+
 	.members ul {
-		max-width: 200px;
+		max-width: 250px;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.members ul > li {
+		margin-bottom: 20px;
 	}
 
 	.e-mail {
@@ -1176,6 +1229,16 @@ footer {
 		max-width: 300px;
 		margin-left: 10px;
 		margin-right: 10px;
+	}
+
+	.get-in-touch h2 {
+		line-height: 40px;
+	}
+
+	.right-part-content {
+		margin-left: 10px;
+		margin-right: 10px;
+		max-width: 200px;
 	}
 }
 
