@@ -162,8 +162,9 @@ h1 {
 
 .provide-info {
 	width: 539px;
-	margin-right: 108px;
-    padding-left: 35px;
+    margin-right: 102px;
+    margin-left: 32px;
+
 }
 
 .provide-info-header {
@@ -311,6 +312,7 @@ h1 {
 	margin-bottom:40px;
 	margin-left: auto;
 	margin-right: auto;
+    padding-left: 50px;
 	max-width: 452.85px;
 	font-family: 'OpenSans-Bold', Helvetica, Arial, sans-serif;
 	font-style: normal;
@@ -323,7 +325,7 @@ h1 {
 }
 
 .section-3 p {
-	max-width: 636.85px;
+	max-width: 550px;
 	margin-top: 0px;
 	margin-left: auto;
 	margin-right: auto;
@@ -604,25 +606,6 @@ h1 {
 	line-height: 28px;
 }
 
-/*.subscribe-button {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin: 0;
-	width: 217px;
-	height: 82px;
-	border-radius: 5px;
-
-	color: white;
-	text-decoration: none;
-	font-family: 'OpenSans-Bold', Helvetica, Arial, sans-serif;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 18px;
-	line-height: 34px;
-	background: #FF2D2D;
-}*/
-
 .subscribe-button {
 	display: flex;
 	align-items: center;
@@ -818,13 +801,6 @@ footer {
 
 
 /*Responsive*/
-/*
-
-@media screen and (max-width: 1302px) {
-	
-
-	
-}*/
 
 @media screen and (max-width: 1249px) {
 
@@ -937,9 +913,6 @@ footer {
 }
 
 @media screen and (max-width: 1116px) { 
-	/*.section-1 {
-		flex-wrap: wrap;
-	}*/
 
 	.intro {
 		flex: 1 1 auto;
