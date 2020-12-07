@@ -1,4 +1,4 @@
-# skillfactory-module-3-Pliusnina
+# Responsive_web_page_layout
 
 Адаптивная вёрстка страницы сайта по PSD макету: 
 
